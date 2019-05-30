@@ -41,6 +41,9 @@ var orm = {
   create: function(table, cols, vals, cb) {
     var queryString = "INSERT INTO " + table;
 
+    //var queryString = "INSERT INTO " + table + " (columnText, columnBool) VALUES ('" + value + "', FALSE);"
+
+
     queryString += " (";
     queryString += cols.toString();
     queryString += ") ";
